@@ -1,0 +1,128 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainbody {
+  display: grid;
+  width: 95%;
+  padding: 1em 1.2em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.first {
+  border: 1px solid #a0aec0;
+  border-radius: 10px;
+  height: 30vh;
+  margin: 2em 1em;
+}
+.first button {
+  background: transparent;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.addbtn {
+  width: 7em;
+  height: 6.5em;
+  fill: #718096;
+  margin-top: 2em;
+}
+
+.first p {
+  margin-top: 4em;
+  font-size: 0.87rem;
+  color: #2d3748;
+  font-weight: 600;
+}
+.second {
+  border: 1px solid #a0aec0;
+  border-radius: 10px;
+  height: 30vh;
+  margin: 2em 1em;
+}
+
+.upper {
+  height: 20vh;
+  background: #f7fafc;
+  border-radius: 10px;
+}
+.second button {
+  background: transparent;
+  border: none;
+  width: -moz-available;
+  padding: 0;
+  width: -webkit-fill-available;
+}
+
+.page_time_ellips {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7em;
+}
+.page_time {
+  text-align: left;
+}
+.timecreated {
+  font-size: 0.7rem;
+  color: #a0aec0;
+}
+
+.pageno {
+  font-size: 0.87rem;
+  color: #2d3748;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.ellipsis {
+  width: 1em;
+  height: 1em;
+  margin-top: 2em;
+  fill: #a0aec0;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .mainbody {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0;
+  }
+
+  .first button {
+    display: block;
+    margin: 0 auto;
+  }
+  .first p {
+    font-size: 0.6rem;
+  }
+
+  .pageno {
+    font-size: 0.6rem;
+  }
+  .timecreated {
+    font-size: 0.5rem;
+  }
+  .ellipsis {
+    margin-top: 1.5em;
+  }
+}
+
+@media (min-width: 600px) and (max-width:768px) {
+    
+      .first p {
+        font-size: 0.5rem;
+      }
+    
+      .pageno {
+        font-size: 0.5rem;
+      }
+      .timecreated {
+        font-size: 0.4rem;
+      }
+}
+
+
